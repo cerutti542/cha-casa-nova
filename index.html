@@ -1,117 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Nosso Novo Lar 🏡</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      margin: 0;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 30px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .item {
-      background: white;
-      padding: 20px;
-      margin: 15px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    button {
-      background: #c9a96e;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    #modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.7);
-    }
-
-    #modal-content {
-      background: white;
-      margin: 15% auto;
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-    }
-
-  </style>
+  <title>Nosso Novo Lar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Nosso novo lar 🏡</h1>
-<p>Você pode contribuir com nosso cantinho 💛</p>
+<header>Nosso novo lar 🏡</header>
 
 <div class="container">
 
-  <div class="item">
-    <h3>Sofá novo</h3>
-    <p>R$ 500</p>
-    <button onclick="abrirModal(500)">Presentear</button>
-  </div>
+  <h2>Escolha um ambiente</h2>
 
-  <div class="item">
-    <h3>Geladeira</h3>
-    <p>R$ 1000</p>
-    <button onclick="abrirModal(1000)">Presentear</button>
-  </div>
-
-  <div class="item">
-    <h3>Utensílios de cozinha</h3>
-    <p>R$ 150</p>
-    <button onclick="abrirModal(150)">Presentear</button>
+  <div class="grid">
+    <a href="cozinha.html"><button>Cozinha 🍳</button></a>
+    <a href="sala.html"><button>Sala 🛋️</button></a>
+    <a href="quarto.html"><button>Quarto 🛏️</button></a>
   </div>
 
 </div>
-
-<div id="modal">
-  <div id="modal-content">
-    <h3>Pagamento via PIX</h3>
-    <p id="valor"></p>
-    <p><strong>Chave PIX:</strong><br>134.941.596-02</p>
-    <p>(Abra o app do banco e pague 😊)</p>
-    <button onclick="fecharModal()">Fechar</button>
-  </div>
-</div>
-
-<script>
-function abrirModal(valor) {
-  document.getElementById("modal").style.display = "block";
-  document.getElementById("valor").innerText = "Valor: R$ " + valor;
-}
-
-function fecharModal() {
-  document.getElementById("modal").style.display = "none";
-}
-</script>
 
 </body>
 </html>
