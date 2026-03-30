@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cozinha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>Cozinha 🍳</header>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+      <h3>Air Fryer</h3>
+      <p>R$ 300</p>
+      <button onclick="pagar(300)">Presentear</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+      <h3>Jogo de Panelas</h3>
+      <p>R$ 200</p>
+      <button onclick="pagar(200)">Presentear</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function pagar(valor) {
+  alert("PIX: SUA-CHAVE-AQUI\nValor: R$ " + valor);
+}
+</script>
+
+</body>
+</html>
